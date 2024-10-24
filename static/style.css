@@ -1,0 +1,171 @@
+/* Basic Styling */
+body, html {
+	height: 100%;
+	margin: 0;
+	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+	font-family: 'Arial', sans-serif;
+  }
+  
+  .chat {
+	margin-top: auto;
+	margin-bottom: auto;
+  }
+  
+  .container-fluid {
+	height: 100%;
+  }
+  
+  .card {
+	height: 500px;
+	border-radius: 15px !important;
+	background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  /* Contacts and Message Area */
+  .msg_card_body {
+	overflow-y: auto;
+	height: 400px;
+  }
+  
+  .contacts_body {
+	padding: 0.75rem 0 !important;
+	overflow-y: auto;
+	white-space: nowrap;
+  }
+  
+  /* Header and Footer Styling */
+  .card-header {
+	border-radius: 15px 15px 0 0 !important;
+	border-bottom: 0 !important;
+	background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-footer {
+	border-radius: 0 0 15px 15px !important;
+	border-top: 0 !important;
+	background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Input Styling */
+  .type_msg {
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	border: 0 !important;
+	color: white !important;
+	height: 60px !important;
+	overflow-y: auto;
+  }
+  
+  .type_msg:focus {
+	box-shadow: none !important;
+	outline: none !important;
+  }
+  
+  .send_btn {
+	border-radius: 0 15px 15px 0 !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	border: 0 !important;
+	color: white !important;
+	cursor: pointer;
+  }
+  
+  .send_btn:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Chat Message Styles */
+  .msg_cotainer {
+	margin: 10px 0;
+	border-radius: 25px;
+	background-color: rgb(82, 172, 255);
+	padding: 10px;
+	position: relative;
+	max-width: 60%;
+	word-wrap: break-word;
+  }
+  
+  .msg_cotainer_send {
+	margin: 10px 0;
+	border-radius: 25px;
+	background-color: #58cc71;
+	padding: 10px;
+	position: relative;
+	max-width: 60%;
+	word-wrap: break-word;
+  }
+  
+  .msg_time {
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 10px;
+  }
+  
+  .msg_time_send {
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 10px;
+  }
+  
+  /* Header and User Info */
+  .user_info span {
+	font-size: 20px;
+	color: white;
+  }
+  
+  .user_info p {
+	font-size: 10px;
+	color: rgba(255, 255, 255, 0.6);
+  }
+  
+  /* User and Bot Images */
+  .user_img, .user_img_msg {
+	height: 40px;
+	width: 40px;
+	border: 1.5px solid #f5f6fa;
+	border-radius: 50%;
+  }
+  
+  .img_cont {
+	position: relative;
+  }
+  
+  .online_icon {
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	background-color: #4cd137;
+	border-radius: 50%;
+	bottom: 0.2em;
+	right: 0.4em;
+	border: 1.5px solid white;
+  }
+  
+  .img_cont_msg {
+	height: 40px;
+	width: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+	.msg_cotainer, .msg_cotainer_send {
+	  max-width: 80%;
+	}
+  }
+  
+  @media (max-width: 576px) {
+	.msg_cotainer, .msg_cotainer_send {
+	  max-width: 100%;
+	}
+  
+	.card {
+	  height: 100%;
+	}
+  
+	.msg_card_body {
+	  height: 70%;
+	}
+  }
+  
